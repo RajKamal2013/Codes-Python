@@ -1,0 +1,6 @@
+ImmutableMultiDict([('phrase', 'Hi I am raj Kamal. Find vowels in this sentence'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17|{'e', 'a', 'i', 'o'}
+ImmutableMultiDict([('phrase', 'Listen now you guess for some random shit'), ('letters', 'krtu')])|127.0.0.1|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17|{'t', 'u', 'r'}
+ImmutableMultiDict([('phrase', 'Finally you are free to leave '), ('letters', 'yeah')])|127.0.0.1|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17|{'e', 'a', 'y'}
+ImmutableMultiDict([('phrase', 'sldjs;dk;'), ('letters', 'ty')])|127.0.0.1|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17|set()
+ImmutableMultiDict([('phrase', 'Yes Check the log here'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17|{'o', 'e'}
+ImmutableMultiDict([('letters', 'art'), ('phrase', "sdf;kls;'dfkdflj;df")])|127.0.0.1|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17|set()
