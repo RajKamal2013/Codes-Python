@@ -8,11 +8,11 @@ class IntFileGenerator:
         self.inputFileName = "input.txt"
         self.outputFileName = "output.txt"
      """
-    def __init__(self, size, range=50):
+    def __init__(self, size:int=100, range:int =999, inputFileName="input.txt", outFileName="output,txt"):
         self.size = size
         self.range = range
-        self.inputFileName = "input.txt"
-        self.outputFileName = "output.txt"
+        self.inputFileName = str(inputFileName)
+        self.outputFileName = str(outFileName)
 
     def read(self):
         print("Collecting Data from File:", self.inputFileName, "in array")
@@ -29,6 +29,7 @@ class IntFileGenerator:
         file= open(self.inputFileName, "w")
         file.write(str(self.size))
         file.write("\n")
+
         for i in range(self.size):
             data1 = random.randint(0, self.range)
             file.write(str(data1))
