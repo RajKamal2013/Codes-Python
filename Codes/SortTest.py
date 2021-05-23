@@ -1,24 +1,49 @@
 import time
 
+from Codes.Sorting.MergeSort import msort
 from Codes.Sorting.QuickSort import qsort
 from Codes.Util import FileGenerator
 from Codes.Sorting import QuickSort
 
+def display(arr, str):
+    banner = "--------------------"
+    print(banner, str, banner)
+    print(arr)
+
+
 def main():
-    f = FileGenerator.IntFileGenerator(1000)
-    f.generate()
-    arr = range(1, 50, 3)
-    f.write(arr)
-    arr = f.read()
-    count = arr[0]
-    arr = arr[1:]
-    print("Array Generated:", arr)
+
+    # ----------------------------- QuickSort -------------------------
+    Qf = FileGenerator.IntFileGenerator(1000, 600, "QsortInput.txt", "QsortOutput.txt")
+    Qf.generate()
+    Qarr = range(1, 50, 3)
+    Qf.write(Qarr)
+    Qarr = Qf.read()
+    count = Qarr[0]
+    Qarr = Qarr[1:]
+    display(Qarr, "QuickSort: Input Array")
     start = time.time_ns()
-    qsort(arr)
+    qsort(Qarr)
     end = time.time_ns()
     print("Time Spent in Sorting via QSort(in nanosec):", (end-start))
-    f.write(arr)
-    print("Array Sorted:", arr)
+    Qf.write(Qarr)
+    display(Qarr, "QuickSort: Output Array")
+
+    # ----------------------------- MergeSort ------------------------
+    Mf = FileGenerator.IntFileGenerator(1000, 600, "MsortInput.txt", "MsortOutput.txt")
+    Mf.generate()
+    Marr = Mf.read()
+    Marr = Marr[1:]
+    display(Marr, "MergeSort: Input Array")
+    start = time.time_ns()
+    msort(Marr)
+    end = time.time_ns()
+    print("Time Spent in Sorting via QSort(in nanosec):", (end - start))
+    display(Marr, "MergeSort:Output Array")
+    Mf.write(Marr)
+
+
+
 
 
 main()

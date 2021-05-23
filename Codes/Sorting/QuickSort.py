@@ -1,7 +1,7 @@
-def partition(arr, start, end):
+def partition(arr, start:int, end:int):
     pivot = arr[end]
-    i = start;
-    j = i - 1
+    i:int = int(start)
+    j:int = int(i - 1)
 
     while (i < end):
         if (arr[i] < pivot):
@@ -12,12 +12,12 @@ def partition(arr, start, end):
 
     j = j + 1
     arr[j], arr[end] = arr[end], arr[j]
-    return j
+    return int(j)
 
 
-def quickSort(arr, start, end):
+def quickSort(arr, start:int, end:int):
     if (start < end):
-        pivot = partition(arr, start, end)
+        pivot = int(partition(arr, start, end))
         quickSort(arr, start, pivot - 1)
         quickSort(arr, pivot + 1, end)
 
