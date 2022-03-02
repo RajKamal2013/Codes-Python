@@ -1,11 +1,10 @@
 import time
 
-from Codes.Algorithm.CountingSort import CSort
-from Codes.Algorithm.HeapSort import hSort
-from Codes.Algorithm.MergeSort import msort
-from Codes.Algorithm.QuickSort import qsort
-from Codes.Util import FileGenerator
-from Codes.Algorithm import QuickSort
+from Coding.Algorithm.CountingSort import CSort
+from Coding.Algorithm.HeapSort import hSort
+from Coding.Algorithm.MergeSort import msort
+from Coding.Algorithm.QuickSort import qsort
+from Coding.Util import FileGenerator
 
 
 def display(arr, str):
@@ -67,7 +66,7 @@ def main():
     # ----------------------------- Counting Sort ------------------------
     size =  20
     rang = 20
-    Cf = FileGenerator.IntFileGenerator(size, rang,  "CsortInput.txt", "CsortOutput.txt")
+    Cf = FileGenerator.IntFileGenerator(size, rang, "CsortInput.txt", "CsortOutput.txt")
     Cf.generate()
     Carr = Cf.read()
     Carr = Carr[1:]
