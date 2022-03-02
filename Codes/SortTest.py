@@ -1,11 +1,12 @@
 import time
 
-from Codes.Sorting.CountingSort import CSort
-from Codes.Sorting.HeapSort import hSort
-from Codes.Sorting.MergeSort import msort
-from Codes.Sorting.QuickSort import qsort
+from Codes.Algorithm.CountingSort import CSort
+from Codes.Algorithm.HeapSort import hSort
+from Codes.Algorithm.MergeSort import msort
+from Codes.Algorithm.QuickSort import qsort
 from Codes.Util import FileGenerator
-from Codes.Sorting import QuickSort
+from Codes.Algorithm import QuickSort
+
 
 def display(arr, str):
     banner = "--------------------"
