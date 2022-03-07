@@ -1,4 +1,4 @@
-from Node import SListNode
+
 
 class SListNode:
    def __init__(self, data, nextNode=None):
